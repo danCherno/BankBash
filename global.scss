@@ -1,0 +1,41 @@
+:root{
+  --text-color: #343C6A;
+  --bar-color: #E6EFF5
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  display: flex;
+  color: var(--text-color);
+
+  aside {
+    flex: 1;
+    border: solid var(--bar-color);
+    border-width: 0px 1px 0px 0px;
+
+    #logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem;
+
+      svg{
+        height: 2.5rem;
+        width: auto;
+      }
+    }
+  }
+
+  main {
+    flex: 5;
+
+    header {
+      display: flex;
+      align-items: center;  
+      border: solid var(--bar-color)  ;
+      border-width: 0px 0px 1px 0px;  
+    }
+  }
+
+}

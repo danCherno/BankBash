@@ -1,9 +1,10 @@
 :root {
   --text-color: #343c6a;
   --nav-selected: #2d60ff;
-  --nav-unselected: #B1B1B1;
+  --nav-unselected: #b1b1b1;
   --bar-color: #e6eff5;
   --bg-color: white;
+  --search-color: #f5f7fa;
 }
 
 body {
@@ -22,7 +23,7 @@ body aside #logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1.5rem 1rem;
+  height: 5rem;
 }
 body aside #logo svg {
   height: 2.5rem;
@@ -62,7 +63,32 @@ body main header {
   align-items: center;
   border: solid var(--bar-color);
   border-width: 0px 0px 1px 0px;
+  height: 5rem;
 }
-body main header h1 {
+body main header #title {
+  margin: 0 5rem 0 2rem;
   font-size: 2rem;
+}
+body main header #header_buttons {
+  display: flex;
+  margin-left: auto;
+}
+body main header #header_buttons #searchbox input {
+  border: none;
+  background-color: var(--search-color);
+  padding: 0;
+  height: 100%;
+  margin: 1rem;
+}
+body main header #header_buttons .header_icons {
+  margin: 1rem;
+  background-color: var(--search-color);
+  height: 2.5rem;
+  border-radius: 1rem;
+  align-items: center;
+  display: flex;
+  padding: 0 0.75rem;
+}
+body main header #header_buttons .profile {
+  padding: 0;
 }

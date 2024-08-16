@@ -59,31 +59,31 @@
         text-underline-offset: 1rem;
       }
     }
-    &__table{
-        th{
-            width: 10rem;
-            color: gray;
-            justify-content: center;
+    &__table {
+      th {
+        width: 10rem;
+        color: gray;
+        justify-content: center;
+      }
+      .ign {
+        text-align: center;
+        @media (max-width: 375px) {
+          display: none;
         }
-        .ign{
-            text-align: center;
-            @media (max-width: 375px) {
-                display: none;
-              }
-        }
-        .neg{
-            color:orangered;
-            text-align: center;
-        }
-        .pos{
-            color: greenyellow;
-            text-align: center;
-        }
-        .reciept{
-            border: 1px solid;
-            border-radius: 2rem;
-            text-align: center;
-        }
+      }
+      .neg {
+        color: orangered;
+        text-align: center;
+      }
+      .pos {
+        color: greenyellow;
+        text-align: center;
+      }
+      .reciept {
+        border: 1px solid;
+        border-radius: 2rem;
+        text-align: center;
+      }
     }
   }
 }

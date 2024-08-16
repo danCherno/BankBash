@@ -20,6 +20,9 @@ body aside {
   border: solid var(--bar-color);
   border-width: 0px 1px 0px 0px;
   height: 100vh;
+  transform: translateY(100vh);
+  animation: slideY 2s ease forwards;
+  animation-delay: 2s;
 }
 body aside #logo {
   display: flex;
@@ -75,6 +78,7 @@ body main header {
   border-width: 0px 0px 1px 0px;
   height: 5rem;
   margin: 0;
+  animation: slideX 2s ease forwards;
 }
 body main header .burger {
   display: none;
@@ -130,6 +134,7 @@ body main #page {
   padding-left: 1.5rem;
   flex-wrap: wrap;
   max-width: 100%;
+  animation: slideX 2s ease forwards;
 }
 body main #page .topic {
   margin: 0 1rem;
@@ -140,5 +145,22 @@ body main #page .topic__content {
 @media (max-width: 375px) {
   body main #page {
     flex-direction: column;
+  }
+}
+
+@keyframes slideX {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0vw);
+  }
+}
+@keyframes slideY {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(0vh);
   }
 }

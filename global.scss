@@ -65,6 +65,9 @@ body {
         }
       }
     }
+    @media (max-width: 375px) {
+      display: none;
+    }
   }
 
   main {
@@ -80,6 +83,13 @@ body {
       border-width: 0px 0px 1px 0px;
       height: 5rem;
       margin: 0;
+
+      .burger {
+        display: none;
+        @media (max-width: 375px) {
+          display: block;
+        }
+      }
 
       #title {
         margin: 0 5rem 0 2rem;
@@ -108,9 +118,16 @@ body {
           align-items: center;
           display: flex;
           padding: 0 0.75rem;
-        }
-        .profile {
-          padding: 0;
+          @media (max-width: 375px) {
+            display: none;
+          }
+
+          .profile {
+            padding: 0;
+            @media (max-width: 375px) {
+              display: block;
+            }
+          }
         }
       }
     }
@@ -122,11 +139,14 @@ body {
       grid-gap: 10px;
       padding-left: 1.5rem;
       flex-wrap: wrap;
-      .topic{
+      .topic {
         margin: 0 1rem;
-        &__content{
+        &__content {
           display: flex;
         }
+      }
+      @media (max-width: 375px) {
+        flex-direction: column;
       }
     }
   }

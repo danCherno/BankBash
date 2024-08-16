@@ -1,0 +1,89 @@
+@import "global.css";
+
+#page {
+  .cards {
+    display: flex;
+    &__card {
+      margin: 0 1rem 0 0;
+      flex-wrap: nowrap;
+    }
+  }
+  .expenses {
+    background-color: var(--bg-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    justify-content: center;
+    &__expense {
+      width: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .bar {
+        background-color: grey;
+        border-radius: 1rem;
+        width: 2.5rem;
+      }
+      .Aug {
+        height: 5rem;
+      }
+      .Sep {
+        height: 8rem;
+      }
+      .Oct {
+        height: 6rem;
+      }
+      .Nov {
+        height: 3rem;
+      }
+      .Dec {
+        height: 7rem;
+        background-color: green;
+      }
+      .Jan {
+        height: 6rem;
+      }
+    }
+  }
+  .payments {
+    &__title {
+      display: flex;
+      gap: 3rem;
+      .selected {
+        text-decoration: underline;
+        color: var(--nav-selected);
+        text-underline-offset: 1rem;
+      }
+    }
+    &__table{
+        th{
+            width: 10rem;
+            color: gray;
+            justify-content: center;
+        }
+        .ign{
+            text-align: center;
+            @media (max-width: 375px) {
+                display: none;
+              }
+        }
+        .neg{
+            color:orangered;
+            text-align: center;
+        }
+        .pos{
+            color: greenyellow;
+            text-align: center;
+        }
+        .reciept{
+            border: 1px solid;
+            border-radius: 2rem;
+            text-align: center;
+        }
+    }
+  }
+}

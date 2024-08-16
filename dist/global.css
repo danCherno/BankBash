@@ -78,6 +78,7 @@ body main header {
 }
 body main header .burger {
   display: none;
+  margin: 0 0 0 1rem;
 }
 @media (max-width: 375px) {
   body main header .burger {
@@ -128,6 +129,7 @@ body main #page {
   grid-gap: 10px;
   padding-left: 1.5rem;
   flex-wrap: wrap;
+  max-width: 100%;
 }
 body main #page .topic {
   margin: 0 1rem;

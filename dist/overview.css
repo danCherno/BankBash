@@ -1,0 +1,174 @@
+@import "global.css";
+#page .cards {
+  display: flex;
+}
+#page .cards__card {
+  margin: 0 1rem 0 0;
+  flex-wrap: nowrap;
+}
+#page .actions {
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+}
+#page .actions__action {
+  margin: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#page .actions__action .neg {
+  color: orangered;
+}
+#page .actions__action .pos {
+  color: greenyellow;
+}
+#page .graph {
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+  display: flex;
+  align-items: baseline;
+}
+#page .graph .activity {
+  margin: 1rem 1rem 0 1rem;
+}
+#page .graph .activity .a {
+  background-color: blue;
+  border-radius: 0.5rem;
+  width: 0.5rem;
+}
+#page .graph .activity .b {
+  background-color: greenyellow;
+  border-radius: 0.5rem;
+  width: 0.5rem;
+}
+#page .graph .activity .Sat {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+#page .graph .activity .Sat .a {
+  height: 10rem;
+}
+#page .graph .activity .Sat .b {
+  height: 5rem;
+}
+#page .graph .activity .Sun {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+#page .graph .activity .Sun .a {
+  height: 7rem;
+}
+#page .graph .activity .Sun .b {
+  height: 3rem;
+}
+#page .graph .activity .Mon {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+#page .graph .activity .Mon .a {
+  height: 6rem;
+}
+#page .graph .activity .Mon .b {
+  height: 5rem;
+}
+#page .graph .activity .Tue {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+#page .graph .activity .Tue .a {
+  height: 10rem;
+}
+#page .graph .activity .Tue .b {
+  height: 8rem;
+}
+#page .graph .activity .Wed {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+#page .graph .activity .Wed .a {
+  height: 3rem;
+}
+#page .graph .activity .Wed .b {
+  height: 5rem;
+}
+#page .graph .activity .Thu {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+#page .graph .activity .Thu .a {
+  height: 8rem;
+}
+#page .graph .activity .Thu .b {
+  height: 5rem;
+}
+#page .graph .activity .Fri {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+#page .graph .activity .Fri .a {
+  height: 8rem;
+}
+#page .graph .activity .Fri .b {
+  height: 7rem;
+}
+#page .graph .activity h3 {
+  color: gray;
+}
+#page .statistics {
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+#page .transfer {
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+}
+#page .transfer__users {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+#page .transfer__action {
+  display: flex;
+  align-items: center;
+}
+#page .transfer__action form {
+  display: flex;
+  align-items: center;
+  background-color: var(--search-color);
+  border-radius: 1rem;
+  height: 2rem;
+  margin: 1rem;
+}
+#page .transfer__action form input {
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--search-color);
+  padding: 0;
+  width: 3rem;
+  height: 100%;
+  margin: 0.5rem;
+}
+#page .transfer__action form h3 {
+  background-color: blue;
+  color: white;
+  height: 2rem;
+  padding: 0 1rem;
+  margin: 0;
+  border-radius: 1rem;
+}
+#page .transfer__action h3 {
+  margin: 1rem;
+  font-size: 1rem;
+}
+#page .histroy {
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+}

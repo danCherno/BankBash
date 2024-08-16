@@ -5,9 +5,11 @@
   --bar-color: #e6eff5;
   --bg-color: white;
   --search-color: #f5f7fa;
+  --page-color: #f5f7fa;
 }
 
 body {
+  font-family: inter;
   background-color: var(--bg-color);
   margin: 0;
   display: flex;
@@ -57,6 +59,9 @@ body aside nav .selected .mark {
 }
 body main {
   flex: 5;
+  display: flex;
+  gap: 0;
+  flex-direction: column;
 }
 body main header {
   display: flex;
@@ -64,6 +69,7 @@ body main header {
   border: solid var(--bar-color);
   border-width: 0px 0px 1px 0px;
   height: 5rem;
+  margin: 0;
 }
 body main header #title {
   margin: 0 5rem 0 2rem;
@@ -91,4 +97,18 @@ body main header #header_buttons .header_icons {
 }
 body main header #header_buttons .profile {
   padding: 0;
+}
+body main #page {
+  height: 100%;
+  background-color: var(--page-color);
+  display: flex;
+  grid-gap: 10px;
+  padding-left: 1.5rem;
+  flex-wrap: wrap;
+}
+body main #page .topic {
+  margin: 0 1rem;
+}
+body main #page .topic__content {
+  display: flex;
 }
